@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" id="new-name">
-    <input type="button" id="change-button" value="change">
+    <div class="inputs">
+        <input type="text" id="new-name">
+        <input type="button" id="change-button" value="change name">
+        <select name="pronouns" id="pronoun-list">
+            <option value="">Choose your pronouns</option>
+            <option value="He/Him">(He/Him)</option>
+            <option value="She/Her">(She/Her)</option>
+            <option value="They/Them">(They/Them)</option>
+        </select>
+    </div>
     <section class="label">
-        <p><strong>HELLO</strong> my name is <em id="tag-name">Rue Williams</em></p>
+        <p><strong>HELLO</strong> my name is <em id="tag-name">Rue Williams</em><em id="tag-pronouns">(They/Them)</em></p>
     </section>
     <script type="module" src="app.js"></script>
 </body>
